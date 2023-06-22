@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/jpg" href="./favicon.jpg">
-    <script src="./script.js"></script>
-    <script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <title>Desafio Alura No.1 </title>
 </head>
@@ -30,8 +29,8 @@
                 <h1>&#9785 Solo se admiten mayúsculas, no se admiten carácteres especiales, ni letras con acento </h1>
                 
                 <div class="button">
-                    <button type="button" class="button1" onclick="mensajevacio()"><span>Encriptar</span></button>
-                    <button type="button" class="button2"  ><span>Desencriptar</span></button> 
+                    <button type="button" class="button1" onclick="encriptar()" ><span>Encriptar</span></button>
+                    <button type="button" class="button2"  onclick="desencriptar()"><span>Desencriptar</span></button> 
                 </div>
 
                 
@@ -42,9 +41,9 @@
             <div class="desencriptador">
                 <textarea name="place_desencript" id="place_desencript" maxlength="256" rows="10" cols="10" class="desencript"></textarea>
                 <div class="defect">
-                    <img src="./image404.png" class="image404">
-                    <h1 id="titulopag">Ningún mensaje fue encontrado</h1>
-                    <h1 id="piedepag">Ingrese el texto que desee encriptar o desencriptar</h1>
+                    <img src="./image404.png" class="image404" id="image404">
+                    <h1 id="tituloPag">Ningún mensaje fue encontrado</h1>
+                    <p id="pieDepag">Ingrese el texto que desee encriptar o desencriptar</p>
                     <button type="button" class="copiar">Copiar</button> 
                 </div>
             </div>
@@ -53,10 +52,8 @@
     </main>
 
 </body>
-
 <footer>
     <p>Desarrollado por Iver Samuel Medina Balboa &copy 2023</p>
 </footer>
-
-
+<script src="./main.js"></script>
 </html>
